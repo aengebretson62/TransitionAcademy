@@ -60,7 +60,7 @@ function validateANDadd() {
     // This algorithm uses iteration to loop through the first half of the string
     //   and compare each character with the appropriate character in the second half of the string
 
-    // assume it is a palindrome
+    // assume it is a palindrome...
     var palindrome = true;
 
     var middle = theword.length / 2;
