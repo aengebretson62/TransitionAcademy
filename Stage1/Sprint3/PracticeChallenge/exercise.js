@@ -13,7 +13,7 @@ async function getBaconipsum() {
   document.getElementById("myRawData").innerHTML = "";   // clear what was previously shown
   document.getElementById("myFormattedData").innerHTML = "";   // clear what was previously shown
 
-  var jsonData = response.json();  // read the response as JSON
+  var jsonData = await response.json();  // read the response as JSON
   
   // stringify and print out the JSON object in the RawData section
   document.getElementById("myRawData").innerHTML = JSON.stringify(jsonData);
