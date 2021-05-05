@@ -5,13 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "pwa-node",
-            "request": "launch",
             "name": "Launch Program",
+            "program": "${workspaceFolder}/hello.js",
+            "request": "launch",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\Stage1\\Sprint3\\InClassExercise\\assignment.js"
-        }
+            "type": "pwa-node"
+        },
+
     ]
 }
