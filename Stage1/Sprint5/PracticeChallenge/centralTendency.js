@@ -1,10 +1,11 @@
 function validateANDadd() {
-    // place the values in the form into variables
+    // place the values in the form into letiables
     var theNewMinString = document.forms["myForm"]["minValue"].value;
     var theNewMin;
     var theNewMaxString = document.forms["myForm"]["maxValue"].value;
     var theNewMax;
-    var theNewNumber = document.forms["myForm"]["newNumber"].value;
+    var theNewNumberString = document.forms["myForm"]["newNumber"].value;
+    var theNewNumber;
     // validate that something was entered for minimum
     if (theNewMinString == "") {
         // nothing was entered so tell the user
@@ -28,13 +29,15 @@ function validateANDadd() {
         return false;
     }
     // validate that something was entered for the number
-    if (theNewNumber == "") {
+    if (theNewNumberString == "") {
         // nothing was entered so tell the user
         alert("Please enter a number to add to the list");
         return false;
     }
+    else
+        theNewNumber = parseInt(theNewNumberString);
     // validate that the number entered in in the range
-    if ((parseInt(theNewNumber) < theNewMin) || (parseInt(theNewNumber) > theNewMax)) {
+    if ((theNewNumber < theNewMin) || (theNewNumber > theNewMax)) {
         // the number was not in the range so tell the user
         alert("Please enter a value in the range");
         document.forms["myForm"]["newNumber"].value = "";
@@ -48,7 +51,7 @@ function validateANDadd() {
         //calculate and display the mean
         var sum = 0; // sum will be the sum of the numbers
         var count = tableRef.rows.length; // count is the number of numbers in the table
-        for (aRow = 0; aRow < count; aRow++) { // for each row/number in the table
+        for (var aRow = 0; aRow < count; aRow++) { // for each row/number in the table
             sum += parseInt(((tableRef.rows[aRow]).innerHTML)); // add the number in the row in the table to the sum
         }
         var theAverage = sum / count; // calculate mean
@@ -57,7 +60,7 @@ function validateANDadd() {
         //calculate and display the median
         // first move the numbers to an array (this will be used for the mode too)
         var theNumbers = [];
-        for (aRow = 0; aRow < count; aRow++) { // for each row/number in the table
+        for (var aRow = 0; aRow < count; aRow++) { // for each row/number in the table
             theNumbers.push(parseInt(((tableRef.rows[aRow]).innerHTML))); // add the number in the row in the table to the array
         }
         // next sort the array of numbers
@@ -66,33 +69,33 @@ function validateANDadd() {
         // finally show the median to the user both for an even and odd number of numbers
         if (count % 2 == 1) { // it is an odd number of items so take the number in the middle of the array
             var theNewMedian = theNumbers[theMiddle]; // find the median
-            var labelRef1 = document.getElementById("theMedian");
-            labelRef1.innerHTML = theNewMedian.toFixed(5); // show the median to the user
+            var labelRef1_1 = document.getElementById("theMedian");
+            labelRef1_1.innerHTML = theNewMedian.toFixed(5); // show the median to the user
         }
         else { // it is an even number of items so take the average of the middle two
             var theNewMedian = (theNumbers[theMiddle - 1] + theNumbers[theMiddle]) / 2; // calculate the median
-            var labelRef1 = document.getElementById("theMedian");
-            labelRef1.innerHTML = theNewMedian.toFixed(5); // show the median to the user
+            var labelRef1_2 = document.getElementById("theMedian");
+            labelRef1_2.innerHTML = theNewMedian.toFixed(5); // show the median to the user
         }
         //calculate and display the mode (from jonlabelle.com)
         var modes = []; // an array to hold the mode(s)
-        var count = []; // an array to hold the count of each element in array theNumbers at the index of the number in array theNumbers
-        var number; // variable to hold the current value in theNumbers being used
+        var aCount = []; // an array to hold the count of each element in array theNumbers at the index of the number in array theNumbers
+        var number = void 0; // variable to hold the current value in theNumbers being used
         var maxCount = 0; // will hold the maximum times a value is found
-        for (aRow = 0; aRow < theNumbers.length; aRow++) {
+        for (var aRow = 0; aRow < theNumbers.length; aRow++) {
             number = theNumbers[aRow];
-            count[number] = (count[number] || 0) + 1;
-            if (count[number] > maxCount) {
-                maxCount = count[number];
+            aCount[number] = (aCount[number] || 0) + 1;
+            if (aCount[number] > maxCount) {
+                maxCount = aCount[number];
             }
         }
-        for (aRow in count)
+        for (var aRow in count)
             if (count.hasOwnProperty(aRow)) {
                 if (count[aRow] === maxCount) {
                     modes.push(Number(aRow));
                 }
             }
-        var labelRef1 = document.getElementById("theMode");
+        labelRef1 = document.getElementById("theMode");
         labelRef1.innerHTML = modes; // show the mode to the user
         // erase the number in the form
         document.forms["myForm"]["newNumber"].value = "";
