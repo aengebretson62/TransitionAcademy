@@ -11,7 +11,7 @@ function validateANDadd() {
     // validate that something was entered for minimum
     if (theNewMinString == "") {
       // nothing was entered so tell the user
-      alert("Please enter a minimum value");
+      alert("Please enter the minimum value");
       return false;
     }
     else
@@ -62,7 +62,7 @@ function validateANDadd() {
         for (let aRow: number = 0; aRow < count; aRow++){     // for each row/number in the table
           sum += parseInt(((tableRef.rows[aRow]).innerHTML));  // add the number in the row in the table to the sum
         }
-        let theAverage = sum/count;     // calculate mean
+        let theAverage: number = sum/count;     // calculate mean
         let labelRef1 = document.getElementById("theMean");    
         labelRef1.innerHTML = theAverage.toFixed(5);   // show the mean to the user
 
@@ -110,7 +110,7 @@ function validateANDadd() {
             }
 
         labelRef1 = document.getElementById("theMode");    
-        labelRef1.innerHTML = modes;   // show the mode to the user
+        (labelRef1.innerHTML as any) = modes;   // show the mode to the user
           
         // erase the number in the form
         document.forms["myForm"]["newNumber"].value = "";

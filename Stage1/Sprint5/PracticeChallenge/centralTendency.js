@@ -9,7 +9,7 @@ function validateANDadd() {
     // validate that something was entered for minimum
     if (theNewMinString == "") {
         // nothing was entered so tell the user
-        alert("Please enter a minimum value");
+        alert("Please enter the minimum value");
         return false;
     }
     else
