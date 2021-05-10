@@ -60,18 +60,6 @@ const winningConditions = [
 ];
 function handleResultValidation(): boolean {
 
-    let roundDraw: number=0;
-
-    for (let i: number=0; i<9; i++){
-        if ((gameState[i] == "X") || (gameState[i] == "O"))
-            roundDraw++;
-    }
-    
-    if (roundDraw==9) {
-        statusDisplay.innerHTML = drawMessage();
-        gameActive = false;
-        return;
-    }
 
     let roundWon: boolean = false;
     for (let i:  number = 0; i <= 7; i++) {
@@ -89,6 +77,19 @@ function handleResultValidation(): boolean {
     }
 if (roundWon) {
         statusDisplay.innerHTML = winningMessage();
+        gameActive = false;
+        return;
+    }
+
+    let roundDraw: number=0;
+
+    for (let i: number=0; i<9; i++){
+        if ((gameState[i] == "X") || (gameState[i] == "O"))
+            roundDraw++;
+    }
+    
+    if (roundDraw==9) {
+        statusDisplay.innerHTML = drawMessage();
         gameActive = false;
         return;
     }

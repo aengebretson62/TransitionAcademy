@@ -56,16 +56,6 @@ var winningConditions = [
     [2, 4, 6]
 ];
 function handleResultValidation() {
-    var roundDraw = 0;
-    for (var i = 0; i < 9; i++) {
-        if ((gameState[i] == "X") || (gameState[i] == "O"))
-            roundDraw++;
-    }
-    if (roundDraw == 9) {
-        statusDisplay.innerHTML = drawMessage();
-        gameActive = false;
-        return;
-    }
     var roundWon = false;
     for (var i = 0; i <= 7; i++) {
         var winCondition = winningConditions[i];
@@ -82,6 +72,16 @@ function handleResultValidation() {
     }
     if (roundWon) {
         statusDisplay.innerHTML = winningMessage();
+        gameActive = false;
+        return;
+    }
+    var roundDraw = 0;
+    for (var i = 0; i < 9; i++) {
+        if ((gameState[i] == "X") || (gameState[i] == "O"))
+            roundDraw++;
+    }
+    if (roundDraw == 9) {
+        statusDisplay.innerHTML = drawMessage();
         gameActive = false;
         return;
     }
