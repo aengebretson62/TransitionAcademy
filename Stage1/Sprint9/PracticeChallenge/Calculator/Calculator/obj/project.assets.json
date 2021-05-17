@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alec.engebretson\\Desktop\\NeDL\\Transition Academy\\TransitionAcademyRepo\\Stage1\\Sprint9\\Calculator\\Calculator\\Calculator.csproj",
+      "projectUniqueName": "C:\\Users\\alec.engebretson\\Desktop\\NeDL\\Transition Academy\\TransitionAcademyRepo\\Stage1\\Sprint9\\PracticeChallenge\\Calculator\\Calculator\\Calculator.csproj",
       "projectName": "Calculator",
-      "projectPath": "C:\\Users\\alec.engebretson\\Desktop\\NeDL\\Transition Academy\\TransitionAcademyRepo\\Stage1\\Sprint9\\Calculator\\Calculator\\Calculator.csproj",
+      "projectPath": "C:\\Users\\alec.engebretson\\Desktop\\NeDL\\Transition Academy\\TransitionAcademyRepo\\Stage1\\Sprint9\\PracticeChallenge\\Calculator\\Calculator\\Calculator.csproj",
       "packagesPath": "C:\\Users\\alec.engebretson\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alec.engebretson\\Desktop\\NeDL\\Transition Academy\\TransitionAcademyRepo\\Stage1\\Sprint9\\Calculator\\Calculator\\obj\\",
+      "outputPath": "C:\\Users\\alec.engebretson\\Desktop\\NeDL\\Transition Academy\\TransitionAcademyRepo\\Stage1\\Sprint9\\PracticeChallenge\\Calculator\\Calculator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alec.engebretson\\AppData\\Roaming\\NuGet\\NuGet.Config",
