@@ -1,0 +1,13 @@
+C:\Users\alec.engebretson\Desktop\NeDL\Transition Academy\TransitionAcademyRepo\Stage1\Sprint9\HelloWorldAgain\HelloWorldAgain\bin\Debug\netcoreapp3.1\HelloWorldAgain.exe
+C:\Users\alec.engebretson\Desktop\NeDL\Transition Academy\TransitionAcademyRepo\Stage1\Sprint9\HelloWorldAgain\HelloWorldAgain\bin\Debug\netcoreapp3.1\HelloWorldAgain.deps.json
+C:\Users\alec.engebretson\Desktop\NeDL\Transition Academy\TransitionAcademyRepo\Stage1\Sprint9\HelloWorldAgain\HelloWorldAgain\bin\Debug\netcoreapp3.1\HelloWorldAgain.runtimeconfig.json
+C:\Users\alec.engebretson\Desktop\NeDL\Transition Academy\TransitionAcademyRepo\Stage1\Sprint9\HelloWorldAgain\HelloWorldAgain\bin\Debug\netcoreapp3.1\HelloWorldAgain.runtimeconfig.dev.json
+C:\Users\alec.engebretson\Desktop\NeDL\Transition Academy\TransitionAcademyRepo\Stage1\Sprint9\HelloWorldAgain\HelloWorldAgain\bin\Debug\netcoreapp3.1\HelloWorldAgain.dll
+C:\Users\alec.engebretson\Desktop\NeDL\Transition Academy\TransitionAcademyRepo\Stage1\Sprint9\HelloWorldAgain\HelloWorldAgain\bin\Debug\netcoreapp3.1\HelloWorldAgain.pdb
+C:\Users\alec.engebretson\Desktop\NeDL\Transition Academy\TransitionAcademyRepo\Stage1\Sprint9\HelloWorldAgain\HelloWorldAgain\obj\Debug\netcoreapp3.1\HelloWorldAgain.csprojAssemblyReference.cache
+C:\Users\alec.engebretson\Desktop\NeDL\Transition Academy\TransitionAcademyRepo\Stage1\Sprint9\HelloWorldAgain\HelloWorldAgain\obj\Debug\netcoreapp3.1\HelloWorldAgain.AssemblyInfoInputs.cache
+C:\Users\alec.engebretson\Desktop\NeDL\Transition Academy\TransitionAcademyRepo\Stage1\Sprint9\HelloWorldAgain\HelloWorldAgain\obj\Debug\netcoreapp3.1\HelloWorldAgain.AssemblyInfo.cs
+C:\Users\alec.engebretson\Desktop\NeDL\Transition Academy\TransitionAcademyRepo\Stage1\Sprint9\HelloWorldAgain\HelloWorldAgain\obj\Debug\netcoreapp3.1\HelloWorldAgain.csproj.CoreCompileInputs.cache
+C:\Users\alec.engebretson\Desktop\NeDL\Transition Academy\TransitionAcademyRepo\Stage1\Sprint9\HelloWorldAgain\HelloWorldAgain\obj\Debug\netcoreapp3.1\HelloWorldAgain.dll
+C:\Users\alec.engebretson\Desktop\NeDL\Transition Academy\TransitionAcademyRepo\Stage1\Sprint9\HelloWorldAgain\HelloWorldAgain\obj\Debug\netcoreapp3.1\HelloWorldAgain.pdb
+C:\Users\alec.engebretson\Desktop\NeDL\Transition Academy\TransitionAcademyRepo\Stage1\Sprint9\HelloWorldAgain\HelloWorldAgain\obj\Debug\netcoreapp3.1\HelloWorldAgain.genruntimeconfig.cache
