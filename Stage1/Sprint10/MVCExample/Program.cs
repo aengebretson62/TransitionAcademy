@@ -10,7 +10,7 @@ namespace MVCSample
     {
         static void Main(string[] args)
         {
-            TipCalculatorController t = new TipCalculatorController();
+            TipController t = new TipController();
         }
     }
 }

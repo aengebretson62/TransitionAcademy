@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MVCSample
 {
-    class Tip
+    class TipModel
     {
         /// 
 
@@ -26,14 +26,14 @@ namespace MVCSample
         private double tipPercent;
 
         //default constructor
-        public Tip()
+        public TipModel()
         {
             Amount = 0;
             TipPercent = 0;
         }
 
         //overloaded constructor
-        public Tip(double amt, double percent)
+        public TipModel(double amt, double percent)
         {
             Amount = amt;
             TipPercent = percent;
