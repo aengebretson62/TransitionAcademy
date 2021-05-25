@@ -11,7 +11,7 @@ namespace InterfaceAndDI
         }
         public void Log(string message)
         {
-            _logger.Log(message);
+            _logger.Log(message);   
         }
     }
 }
