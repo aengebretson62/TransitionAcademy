@@ -1,6 +1,6 @@
 function myFunction() {
-    let newName: string = "";
+    var newName = "";
     newName += 5;
-    newName = (<HTMLInputElement>document.getElementById("fname")).value;
+    newName = document.getElementById("fname").value;
     document.getElementById("greeting").innerHTML = "Greetings " + newName + " !";
 }
