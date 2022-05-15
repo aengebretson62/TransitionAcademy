@@ -2,9 +2,9 @@ async function getForecast(){
   
   var ApiString = "https://api.weather.gov/gridpoints/";
   var theNewOffice = document.getElementById("newOffice").value;
-  ApiString = ApiString + theNewOffice + "/47,30/forecast";
+  ApiString = ApiString + theNewOffice + "/31,80/forecast";
 
-console.log(ApiString);
+  console.log(ApiString);
 
   var response = await fetch(ApiString);
   var jsonData = await response.json();

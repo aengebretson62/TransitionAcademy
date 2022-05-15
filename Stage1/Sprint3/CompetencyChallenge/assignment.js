@@ -15,6 +15,8 @@ async function getAnotherQuote() {
         minLength = 250;
 
     apiString = apiString + "?minLength=" + minLength + "&maxLength=" + maxLength;
+
+    alert(apiString);
   
     // now make the API call to the web service using the string and store what is returned in response
     var response = await fetch(apiString);
@@ -24,7 +26,7 @@ async function getAnotherQuote() {
     document.getElementById("theAuthor").innerHTML = "";   // clear what was previously shown
   
     var jsonData = await response.json();  // read the response as JSON
-    
+   
     // stringify and print out the JSON object fields after removing the quotes
     var theNewQuote = JSON.stringify(jsonData.content);
     theNewQuote = theNewQuote.substring(1,theNewQuote.length-1);

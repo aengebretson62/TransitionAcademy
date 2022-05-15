@@ -1,6 +1,5 @@
-"use strict";
 function myFunction() {
-    var newName = "Alec";
+    var newName = "";
     newName = document.getElementById("fname").value;
-    document.getElementById("greeting").innerHTML = "Greetings " + newName + " !";
+    document.getElementById("greeting").innerHTML = "More Greetings " + newName + " !";
 }

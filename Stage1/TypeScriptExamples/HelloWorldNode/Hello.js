@@ -1,3 +1,2 @@
-var message = "Hello World 6";
+var message = "Hello World 2";
 console.log(message);
-//# sourceMappingURL=Hello.js.map
