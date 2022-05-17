@@ -3,7 +3,7 @@ async function getBaconipsum() {
   var apiString = "https://baconipsum.com/api/";
   // next add the parameters to the string using the drop down lists
   var theNewParagraphs = document.getElementById("newParagraphs").value;
-  apiString = apiString + "?type=meat&paras=" + theNewParagraphs;
+  apiString = apiString + "?type=all-meat&paras=" + theNewParagraphs;
   alert(apiString);  // show the API string
 
   // now make the API call to the web service using the string and store what is returned in response
